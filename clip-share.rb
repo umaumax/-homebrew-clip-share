@@ -5,8 +5,8 @@
 class ClipShare < Formula
   desc ""
   homepage ""
-  url "https://github.com/umaumax/clip-share/archive/0.0.2.tar.gz"
-  sha256 "a1210df189b183b0b1dd26a5fa367fb23b1a5de789ad2a914c29eb5af50892d0"
+  url "https://github.com/umaumax/clip-share/archive/0.0.3.tar.gz"
+  sha256 "0c3df249b3486f17a5bf58d15b69e9743c16c848ac53d1a082b8f7a9b07b919b"
 
   # depends_on "cmake" => :build
 
