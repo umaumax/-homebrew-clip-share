@@ -16,7 +16,7 @@ resource "gobootstrap" do
 	def install
 #		system "ls"
 #		bin.install "0.0.1.tar.gz"
- ("gobootstrap").install resource("gobootstrap")
+ (buildpath/"gobootstrap").install resource("gobootstrap")
     EOS
 		#cd "." do
 		#end
