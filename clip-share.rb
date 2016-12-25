@@ -14,9 +14,9 @@ resource "gobootstrap" do
   end
 
 	def install
- ("gobootstrap").install resource("gobootstrap")
+		bin.install "0.0.1.tar.gz"
+# ("gobootstrap").install resource("gobootstrap")
     EOS
-		#bin.install "clip_share.0.0.1.tar.gz"
 		#cd "." do
 		#end
 #		system "tar", "xvf", "0.0.1.tar.gz"
