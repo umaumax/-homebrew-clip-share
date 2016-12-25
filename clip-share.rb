@@ -8,10 +8,10 @@ class ClipShare < Formula
 	version "0.0.1"
 
 	def install
-		bin.install "clip-share"
-		bin.install "clip-share_c2s.sh"
-		bin.install "clip-share_s2c.sh"
-		bin.install "c2s.sh"
-		bin.install "s2c.sh"
+#		bin.install "clip-share"
+#		bin.install "clip-share_c2s.sh"
+#		bin.install "clip-share_s2c.sh"
+#		bin.install "c2s.sh"
+#		bin.install "s2c.sh"
 	end
 end
