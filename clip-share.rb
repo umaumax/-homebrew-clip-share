@@ -2,8 +2,8 @@ require "formula"
 
 class ClipShare < Formula
 	homepage "https://github.com/umaumax/clip-share"
-	url "https://github.com/umaumax/clip-share/archive/0.0.1.tar.gz"
-	sha256 "717e8045ec82b886767edf83f523ff260f72fcb4b217804d5dc244a61b5d70e1"
+	url "https://github.com/umaumax/clip-share/archive/clip_share-0.0.1.yosemite.bottle.tar.gz"
+	sha256 "d38f46ee71a43ab7227a228605ab3f047b162c92a93237405c535d509e38377b"
 	head "https://github.com/umaumax/clip-share.git"
 	version "0.0.1"
 
