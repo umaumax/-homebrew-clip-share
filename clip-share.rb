@@ -8,6 +8,7 @@ class ClipShare < Formula
 	version "0.0.1"
 
 	def install
+		system "ls", "."
 #		bin.install "clip-share"
 #		bin.install "clip-share_c2s.sh"
 #		bin.install "clip-share_s2c.sh"
