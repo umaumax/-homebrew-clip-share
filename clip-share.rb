@@ -8,6 +8,9 @@ class ClipShare < Formula
 	version "0.0.1"
 
 	def install
+		cd "." do
+		end
+#		system "tar", "xvf", "0.0.1.tar.gz"
 #		system "tar", "xvf", "0.0.1.tar.gz"
 #		bin.install "clip-share"
 #		bin.install "clip-share_c2s.sh"
