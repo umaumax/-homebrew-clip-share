@@ -1,30 +1,30 @@
-require "formula"
+# Documentation: https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md
+#                http://www.rubydoc.info/github/Homebrew/brew/master/Formula
+# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 
 class ClipShare < Formula
-	homepage "https://github.com/umaumax/clip-share"
-	url "https://github.com/umaumax/clip-share/archive/0.0.1.tar.gz"
-	sha256 "717e8045ec82b886767edf83f523ff260f72fcb4b217804d5dc244a61b5d70e1"
-	head "https://github.com/umaumax/clip-share.git"
-	version "0.0.1"
+  desc ""
+  homepage ""
+  url "https://github.com/umaumax/clip-share/archive/0.0.2.tar.gz"
+  sha256 "a1210df189b183b0b1dd26a5fa367fb23b1a5de789ad2a914c29eb5af50892d0"
 
-resource "gobootstrap" do
-    url "https://storage.googleapis.com/golang/go1.7.darwin-amd64.tar.gz"
-    version "1.7"
-    sha256 "51d905e0b43b3d0ed41aaf23e19001ab4bc3f96c3ca134b48f7892485fc52961"
+  # depends_on "cmake" => :build
+
+  def install
+    libexec.install Dir["*"]
+    bin.install_symlink Dir[libexec/"clip-share"]
   end
 
-	def install
-		bin.install "0.0.1.tar.gz"
-# ("gobootstrap").install resource("gobootstrap")
-    EOS
-		#cd "." do
-		#end
-#		system "tar", "xvf", "0.0.1.tar.gz"
-#		system "tar", "xvf", "0.0.1.tar.gz"
-#		bin.install "clip-share"
-#		bin.install "clip-share_c2s.sh"
-#		bin.install "clip-share_s2c.sh"
-#		bin.install "c2s.sh"
-#		bin.install "s2c.sh"
-	end
+  test do
+    # `test do` will create, run in and delete a temporary directory.
+    #
+    # This test will fail and we won't accept that! It's enough to just replace
+    # "false" with the main program this formula installs, but it'd be nice if you
+    # were more thorough. Run the test with `brew test clip-share`. Options passed
+    # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
+    #
+    # The installed folder is not in the path, so use the entire path to any
+    # executables being tested: `system "#{bin}/program", "do", "something"`.
+    system "false"
+  end
 end
