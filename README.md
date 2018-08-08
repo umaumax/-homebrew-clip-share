@@ -1,5 +1,7 @@
 # homebrew-clip-share
 
+This repo is temporary freezed.
+
 [umaumax/clip-share]( https://github.com/umaumax/clip-share )
 
 ## FYI
